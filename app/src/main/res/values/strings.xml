@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">socketclient</string>
+    <string name="join">join</string>
+    <string name="send">send</string>
+</resources>
