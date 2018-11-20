@@ -20,20 +20,34 @@
         android:text="10086"
         app:layout_constraintTop_toBottomOf="@+id/host_address_et" />
 
+    <EditText
+        android:id="@+id/user_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        app:layout_constraintTop_toBottomOf="@+id/host_port_et" />
+
+    <EditText
+        android:id="@+id/message_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_et" />
+
     <Button
         android:id="@+id/join_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onJoin"
         android:text="@string/join"
-        app:layout_constraintTop_toBottomOf="@+id/host_port_et" />
+        app:layout_constraintTop_toBottomOf="@+id/message_et" />
 
     <Button
         android:id="@+id/send_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/send"
         android:onClick="onSend"
+        android:text="@string/send"
         app:layout_constraintTop_toBottomOf="@+id/join_btn" />
 
 </android.support.constraint.ConstraintLayout>
